@@ -1,0 +1,11 @@
+Flask-WTF is an extension for Flask that integrates WTForms, making it easy to create, validate, and render web forms in your Flask applications.
+
+->Form Classes: Define forms as Python classes.
+
+->Field Types: Supports many field types (StringField, PasswordField, etc.).
+
+->Validation: Built-in and custom validators (e.g., DataRequired, Email).
+
+->CSRF Protection: Automatically adds CSRF protection to your forms.
+
+->Easy Rendering: Integrates with Jinja2 templates for easy form rendering.

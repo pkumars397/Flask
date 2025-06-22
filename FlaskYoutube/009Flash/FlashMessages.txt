@@ -1,0 +1,38 @@
+flash() and get_flashed_message()
+
+->one time message to user,flask store onetime in memory using session and after that it disappear.
+
+->one time notification to user.
+
+->we need to create session for the flash message ,its necessary.
+
+--code in flask--
+
+flash("this is flash message")
+
+->using flash message in template ,base.html or any.html
+
+--code--
+{% with messages=get_flashed_messages() %}
+  {% if messages %}
+    <ul>
+     {% for message in messages %}
+       <li>{{message}}</li>
+     {%endfor%}
+    </ul>
+   {%endif%}
+{%endwith%}
+
+->this message will be displayed only once.
+
+->after being displayed ,it is removed from the session.
+
+->use in login,logout,signup,feedback,form handling,success messages.
+
+--some important points--
+
+1.)flash +redirect
+
+2.)session is required for flash message
+
+3.) category of flash message is optional (for styling purpose)

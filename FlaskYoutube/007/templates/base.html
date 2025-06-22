@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My site{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My Site</h2>
+        <nav>
+            <a href="/">Home</a> 
+            <a href="#">Welcome</a> 
+            <a href="/about">About</a> 
+        </nav>
+        <hr>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <hr>
+
+    {% block footer %}
+    <footer>
+        <p>&copy; 2025 My Site</p>
+    </footer>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+JINJA2 is template engine that helps to use python code inside the html .Flask automatically uses it..
+
+
+1 - Pythin var
+
+{{variable}}
+<p> welcome {{name}}</p>
+
+2 - Conditionals
+{% if %} statements {% endif %}
+
+is_topper=True
+{% if is_topper %}
+<p>you are a topper</p>
+
+{% else %}
+<p> you need improvement</p>
+
+{% endif %}
+
+3- Loop
+{% for i in items %}
+-----
+{% endfor %}

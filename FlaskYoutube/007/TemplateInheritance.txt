@@ -1,0 +1,20 @@
+Template inheritance in Flask (using Jinja2) allows you to create a base HTML template with common structure (like headers, footers, navigation), and then have other templates extend this base, filling in only the parts that change. This keeps your code DRY (Don’t Repeat Yourself) and makes maintenance easier.
+
+->
+base.html in your templates folder:
+
+-> 
+{% block title %} and {% block content %} are placeholders for child templates to override.
+
+->
+The {% extends "base.html" %} line tells Jinja2 to use base.html as the starting point.
+
+->
+Child templates override blocks defined in the base template.
+
+->>Advantages
+Consistent layout across pages.
+
+Easy updates: change the base template to update all pages.
+
+Cleaner, more maintainable code.
