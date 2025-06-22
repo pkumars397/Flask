@@ -6,6 +6,6 @@ Flask-WTF is an extension for Flask that integrates WTForms, making it easy to c
 
 ->Validation: Built-in and custom validators (e.g., DataRequired, Email).
 
-->CSRF Protection: Automatically adds CSRF protection to your forms.
+->CSRF Protection: Automatically adds CSRF protection to your forms.Cross site request forgery
 
 ->Easy Rendering: Integrates with Jinja2 templates for easy form rendering.
